@@ -1,3 +1,5 @@
+// step one
+
 function pin(){
     let pin = generatePin();
     let pinString = pin + '';
@@ -21,6 +23,8 @@ document.getElementById('btn-generate').addEventListener('click',function(){
     input.value = getPin;
 })
 
+// step two
+
 document.getElementById('calculator').addEventListener('click',function(event){
     let number = event.target.innerText;
     let inputTyped = document.getElementById('typed');
@@ -41,6 +45,8 @@ document.getElementById('calculator').addEventListener('click',function(event){
         inputTyped.value = newInputValue;
     }
 })
+
+// step three
 
 document.getElementById('submit').addEventListener('click',function(){
     let inputTyped = document.getElementById('typed');
